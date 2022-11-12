@@ -70,7 +70,49 @@ const joinsCategory = (req, res) => {
   console.log(id);
 };
 
+const orderAsc = (req, res) => {
+  const q = "SELECT * FROM product ORDER BY name ASC;";
+  pool.query(q, (err, data) => {
+    const newData = data.map((e) => {
+      return {
+        id: e.id,
+        name: e.name,
+        url_image: e.url_image
+          ? e.url_image
+          : "https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png",
+        price: e.price,
+        discount: e.discount,
+        category: e.category,
+      };
+    });
+    if (err) return res.status(500).json(err);
+    return res.status(200).json(newData);
+  });
+};
+
+const orderDesc = (req, res) => {
+  const q = "SELECT * FROM product ORDER BY name DESC;";
+  pool.query(q, (err, data) => {
+    const newData = data.map((e) => {
+      return {
+        id: e.id,
+        name: e.name,
+        url_image: e.url_image
+          ? e.url_image
+          : "https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png",
+        price: e.price,
+        discount: e.discount,
+        category: e.category,
+      };
+    });
+    if (err) return res.status(500).json(err);
+    return res.status(200).json(newData);
+  });
+};
+
 module.exports = {
   allProducts,
   joinsCategory,
+  orderAsc,
+  orderDesc,
 };

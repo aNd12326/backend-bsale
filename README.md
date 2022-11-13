@@ -111,7 +111,7 @@ PORT= "example... 3001"
 
 <br/>
 
-Finalmente ejecutar con cualquiera de los el siguientes comandos:
+Finalmente ejecutar los siguientes comandos:
 
 ```
 npm i

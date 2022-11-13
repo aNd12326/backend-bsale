@@ -1,6 +1,6 @@
 <h1>Rest Api Bsale  <img src="https://i.imgur.com/PAI2AF0.jpg"/></h1>
 
-Rest Api creada con una base de datos relacional "MYSQL" otorgada en el desafío que nos permite obtener datos sobre los productos y sus propias categorias, de igual manera poder filtrarlos por nombre y catergoria.
+    Rest Api creada con una base de datos relacional "MYSQL" otorgada en el desafío,la cual nos permite obtener datos sobre los productos y sus propias categorias, de igual manera poder filtrarlos por nombre y catergoria.
 
 <br/>
 

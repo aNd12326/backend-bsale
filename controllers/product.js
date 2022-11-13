@@ -13,7 +13,7 @@ const allProducts = (req, res = response) => {
             name: e.name,
             url_image: e.url_image
               ? e.url_image
-              : "https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png",
+              : "https://media-exp1.licdn.com/dms/image/C4E0BAQEScQ7e7pBiqQ/company-logo_200_200/0/1626738605064?e=2147483647&v=beta&t=slWv_sNbmpIuJ74MsY59lJV55G-Um5l-R-BUaCUgbl4",
             price: e.price,
             discount: e.discount,
             category: e.category,
@@ -32,7 +32,7 @@ const allProducts = (req, res = response) => {
             name: e.name,
             url_image: e.url_image
               ? e.url_image
-              : "https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png",
+              : "https://media-exp1.licdn.com/dms/image/C4E0BAQEScQ7e7pBiqQ/company-logo_200_200/0/1626738605064?e=2147483647&v=beta&t=slWv_sNbmpIuJ74MsY59lJV55G-Um5l-R-BUaCUgbl4",
             price: e.price,
             discount: e.discount,
             category: e.category,
@@ -57,7 +57,7 @@ const joinsCategory = (req, res) => {
         name: e.name,
         url_image: e.url_image
           ? e.url_image
-          : "https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png",
+          : "https://media-exp1.licdn.com/dms/image/C4E0BAQEScQ7e7pBiqQ/company-logo_200_200/0/1626738605064?e=2147483647&v=beta&t=slWv_sNbmpIuJ74MsY59lJV55G-Um5l-R-BUaCUgbl4",
         price: e.price,
         discount: e.discount,
         category: e.category,
@@ -79,7 +79,7 @@ const orderAsc = (req, res) => {
         name: e.name,
         url_image: e.url_image
           ? e.url_image
-          : "https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png",
+          : "https://media-exp1.licdn.com/dms/image/C4E0BAQEScQ7e7pBiqQ/company-logo_200_200/0/1626738605064?e=2147483647&v=beta&t=slWv_sNbmpIuJ74MsY59lJV55G-Um5l-R-BUaCUgbl4",
         price: e.price,
         discount: e.discount,
         category: e.category,
@@ -99,7 +99,7 @@ const orderDesc = (req, res) => {
         name: e.name,
         url_image: e.url_image
           ? e.url_image
-          : "https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png",
+          : "https://media-exp1.licdn.com/dms/image/C4E0BAQEScQ7e7pBiqQ/company-logo_200_200/0/1626738605064?e=2147483647&v=beta&t=slWv_sNbmpIuJ74MsY59lJV55G-Um5l-R-BUaCUgbl4",
         price: e.price,
         discount: e.discount,
         category: e.category,

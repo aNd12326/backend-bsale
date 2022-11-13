@@ -120,7 +120,7 @@ npm start
 
 ## Produccion
 
-Esta api fue deployada render:
+Esta rest api fue deployada en render:
 <br/>
 
 <ul>

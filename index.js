@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const morgan = require("morgan");
-const productRoutes = require("./routes/product");
 const dotenv = require("dotenv");
 const routes = require("./routes/index");
 
@@ -19,6 +18,7 @@ app.use((req, res, next) => {
   next();
 });
 
+// to have acces to all routes
 app.use("/api", routes);
 
 app.listen(process.env.PORT, () => {

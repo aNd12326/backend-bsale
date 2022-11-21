@@ -1,12 +1,13 @@
 const express = require("express");
 const { allCategories } = require("../controllers/category");
-const { joinsCategory } = require("../controllers/product");
+const { joinByCategory } = require("../controllers/product");
 
 const router = express.Router();
 
-// getting all categories
+// ruta para obtener todas las categorias
 router.get("/", allCategories);
-// getting all the products by their category
-router.get("/:id", joinsCategory);
+
+// ruta para obtener todos los productos por categoria
+router.get("/:id", joinByCategory);
 
 module.exports = router;

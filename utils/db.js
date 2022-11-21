@@ -1,8 +1,8 @@
 const mysql = require("mysql");
 require("dotenv").config();
 
-// Here we connect to our db
-// note => to handle the connection I used pool
+// Aqui nos conectamos a la base de datos
+// nota => para manejar la conexion usarmos pool
 
 const pool = mysql.createPool({
   host: process.env.HOST_DB,
@@ -11,4 +11,4 @@ const pool = mysql.createPool({
   database: process.env.DATABASE_NAME,
 });
 
-module.exports = { pool };
+module.exports = pool;

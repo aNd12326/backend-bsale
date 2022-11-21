@@ -1,11 +1,13 @@
 const express = require("express");
 const app = express();
+const dotenv = require("dotenv");
 const cors = require("cors");
 const morgan = require("morgan");
-const dotenv = require("dotenv");
 const routes = require("./routes/index");
 
 dotenv.config();
+
+// Middlewares
 app.use(cors());
 app.use(morgan("dev"));
 app.use((req, res, next) => {
@@ -18,9 +20,14 @@ app.use((req, res, next) => {
   next();
 });
 
-// to have acces to all routes
+//Puerto (se declara en las variables de entorno)
+const port = process.env.PORT;
+
+// para tener acceso a todas las rutas
 app.use("/api", routes);
 
-app.listen(process.env.PORT, () => {
-  console.log("Api working on port ", process.env.PORT);
+// se levanta el servidor
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
 });

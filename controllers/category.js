@@ -1,12 +1,12 @@
 const { response } = require("express");
-const { pool } = require("../connect");
+const categoryModel = require("../models/Category");
 
 const allCategories = (req, res = response) => {
   try {
-    const q = "SELECT * FROM category";
-    pool.query(q, (err, data) => {
-      if (err) return res.status(500).json(err);
-      return res.status(200).json(data);
+    const sql = "SELECT * FROM category";
+    categoryModel.getAllCategories(sql, (err, result) => {
+      if (err) throw err;
+      res.status(200).json(result);
     });
   } catch (error) {
     console.log(error);

@@ -4,7 +4,7 @@ const productRoute = require("./product");
 const categoryRoute = require("./category");
 
 const router = Router();
-// configuring the routes
+// configurando las rutas
 router.use("/products", productRoute);
 router.use("/categories", categoryRoute);
 

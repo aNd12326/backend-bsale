@@ -3,11 +3,13 @@ const { allProducts, orderAsc, orderDesc } = require("../controllers/product");
 
 const router = express.Router();
 
-// route all Products + route product by name
+// ruta para obtener todos los productos o productos por nombre
 router.get("/", allProducts);
-// route to sort products in ascending order
+
+// ruta para obtener todos los productos ordenados ascendentemente por nombre
 router.get("/order-asc", orderAsc);
-// route to sort products in descending order
+
+// ruta para obtener todos los productos ordenados descendentemente por nombre
 router.get("/order-desc", orderDesc);
 
 module.exports = router;
